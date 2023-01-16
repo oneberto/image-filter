@@ -17,6 +17,7 @@ export type Filter = {
 
 export type ContextState = {
     image?: File;
+    previewImageURL?: string;
     activeFilter?: Filter;
 };
 

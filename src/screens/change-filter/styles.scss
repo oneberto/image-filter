@@ -1,0 +1,14 @@
+.image {
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+
+    // CSS HACK TO CREATE A RESPONSIVE IMAGE PREVIEW
+    &:before {
+        content: " ";
+        display: block;
+        width: 100%;
+        padding-top: 125%;
+    }
+}
