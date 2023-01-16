@@ -1,7 +1,7 @@
-import React from "react";
+import InitialScreen from "./screens/initial";
 
 const App = () => {
-    return <div className="App">Filter app</div>;
+    return <InitialScreen />;
 };
 
 export default App;
