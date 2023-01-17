@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/image-filter/static/css/main.abe2fbae.css",
+    "main.js": "/image-filter/static/js/main.d8fc1cff.js",
+    "index.html": "/image-filter/index.html",
+    "main.abe2fbae.css.map": "/image-filter/static/css/main.abe2fbae.css.map",
+    "main.d8fc1cff.js.map": "/image-filter/static/js/main.d8fc1cff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abe2fbae.css",
+    "static/js/main.d8fc1cff.js"
+  ]
+}
