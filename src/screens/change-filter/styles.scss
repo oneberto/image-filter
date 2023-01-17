@@ -1,14 +1,37 @@
-.image {
-    width: 100%;
-    position: relative;
-    background-position: center;
-    background-size: cover;
+.canvas-container {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto 35px;
+}
 
-    // CSS HACK TO CREATE A RESPONSIVE IMAGE PREVIEW
-    &:before {
-        content: " ";
-        display: block;
-        width: 100%;
-        padding-top: 125%;
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    > button {
+        flex: 1;
+    }
+}
+
+.filters {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.filter-range {
+    display: flex;
+    margin-bottom: 25px;
+    transition: opacity 0.5s;
+
+    > input {
+        flex: 1;
+        margin-right: 15px;
+    }
+
+    > label {
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
     }
 }

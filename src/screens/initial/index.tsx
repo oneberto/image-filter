@@ -1,33 +1,23 @@
 import React from "react";
 import ImageIcon from "../../components/icons/image";
-import { useAppContext } from "../../context";
-import { ContextActionType } from "../../context/types";
 
 import "./styles.scss";
 
-const InitialScreen = () => {
-    const { dispatch } = useAppContext();
+type Props = {
+    onChangeImage(event: React.ChangeEvent<HTMLInputElement>): void;
+};
 
-    const handleChangeImage = (event: React.ChangeEvent<HTMLInputElement>) => {
-        if (!event.target.files?.length) {
-            return;
-        }
-
-        dispatch({
-            type: ContextActionType.ChangeImage,
-            payload: event.target.files[0],
-        });
-    };
-
+const InitialScreen = ({ onChangeImage }: Props) => {
     return (
-        <div className="container">
+        <div className="container" data-testid="initial-screen">
             <h1>Image filter app</h1>
 
-            <div className="dropzone">
+            <div className="dropzone" data-testid="dropzone">
                 <input
                     type="file"
-                    onChange={handleChangeImage}
+                    onChange={onChangeImage}
                     accept="image/*"
+                    data-testid="dropzone-input"
                 />
 
                 <ImageIcon className="icon" />
